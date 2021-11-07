@@ -9,11 +9,13 @@
 			<%~ it.css %>
 			<%~ it.widgetCss %>
 			
-			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Zen+Antique+Soft&display=swap');
 			body {
-				font-family: 'Poppins', sans-serif;
+				font-family: 'Open Sans', sans-serif;
 			}
 		</style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div class="main container">
@@ -28,8 +30,26 @@
 		
 		<div class="resume__lower__left">
 
-<!-- WORK -->
+        <!-- WORK -->
 			<%~ include("work", {
+				resume: it.resume,
+				formatDate: it.formatDate
+			}) %>
+
+		<!-- PUBLICATION -->
+			<%~ include("publication", {
+				resume: it.resume,
+				formatDate: it.formatDate
+			}) %>
+
+		<!-- REFERENCE -->
+			<%~ include("reference", {
+				resume: it.resume,
+				formatDate: it.formatDate
+			}) %>
+			
+		<!-- CERTIFICATION -->
+			<%~ include("certification", {
 				resume: it.resume,
 				formatDate: it.formatDate
 			}) %>
@@ -49,12 +69,6 @@
 				formatDate: it.formatDate
 			}) %>
 			
-			<!-- PROFILE -->
-			<%~ include("profile", {
-				resume: it.resume,
-				formatDate: it.formatDate
-			}) %>
-			
 			<!-- INTEREST -->
 			<%~ include("interest", {
 				resume: it.resume,
@@ -65,9 +79,7 @@
 			<%~ include("language", {
 				resume: it.resume,
 				formatDate: it.formatDate
-			}) %>
-			
-			
+			}) %>	
 			
 			<!-- PROJECT -->
 			<%~ include("project", {
@@ -80,27 +92,15 @@
 				resume: it.resume,
 				formatDate: it.formatDate
 			}) %>
-			
-			<!-- PUBLICATION -->
-			<%~ include("publication", {
+
+			<!-- PROFILE -->
+			<%~ include("profile", {
 				resume: it.resume,
 				formatDate: it.formatDate
 			}) %>
-			
-			<!-- REFERENCE -->
-			<%~ include("reference", {
-				resume: it.resume,
-				formatDate: it.formatDate
-			}) %>
-			
+
 			<!-- VOLUNTEER -->
 			<%~ include("volunteer", {
-				resume: it.resume,
-				formatDate: it.formatDate
-			}) %>
-			
-			<!-- CERTIFICATION -->
-			<%~ include("certification", {
 				resume: it.resume,
 				formatDate: it.formatDate
 			}) %>

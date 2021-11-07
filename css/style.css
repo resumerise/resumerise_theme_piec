@@ -1,12 +1,16 @@
 :root {
 	--layout-padding: 40px;
+	--blue-color: #538ca4;
+	--gray-color: #83847f;
+	--heading-two-size: 1.4em;
 }
+
 
 /* layout */
 body {
 	padding: var(--layout-padding);
 	background: #fff;
-	font: 15px Arial, Helvetica, sans-serif;
+	font: 15px;
 }
 
 @media print {
@@ -20,7 +24,7 @@ body {
 @media screen {
 	body {
 		line-height: 1.4;
-		margin: 50px 0;
+		margin: 2.5em 0;
 		margin-bottom: 100px;
 	}
 }
@@ -31,31 +35,31 @@ body {
 }
 
 .basics__left__title--black{
-	font-size: 25px;
+	font-size: 2rem;
 }
 
 .heading {
-	font-size: 32px;
+	font-size: 2.3em;
 	margin-bottom: 0;
+	font-weight: 700;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: var(--heading-two-size);
 }
 
 li {
 	list-style: none;
-	color: #83847f;
+	color: var(--gray-color);
 }
 
 .basics__left__text--blue {
-	font-size: 20px;
-	color: #538ca4;
+	font-size: var(--heading-two-size);
+	color: var(--blue-color);
 	font-weight: bold;
 	margin: 0;
-	font-weight: bold;
 	text-transform: uppercase;
-	margin-bottom: 5px;
+	margin-bottom: 0.5em;
 }
 
 section {
@@ -76,13 +80,13 @@ blockquote {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: flex-start;
-	margin-bottom: 5px;
+	margin-bottom: 0.5em;
 }
 
 .key-value-item label, 
 .key-list-item label {
 	white-space: nowrap;
-	color: #538ca4;
+	color: var(--blue-color);
 	margin-right: 5px;
 }
 
@@ -151,7 +155,7 @@ blockquote {
 
 .resume__lower__right {
 	width: 50%;
-	padding-left: 20px;
+	padding-left: 2em;
 }
 
 @media screen and (max-width:889px){

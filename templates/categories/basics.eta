@@ -26,13 +26,6 @@
             classes: "basics__left__text",
         }) %>
         <%~ include('key-value-item', {
-            label: it.resume.settings?.labels?.categoryProperty?.basics?.label, 
-            value: it.resume.basics.label,
-            showLabel: false,
-            id: 'basics-label',
-            classes: "basics__left__text",
-        }) %>
-        <%~ include('key-value-item', {
             label: it.resume.settings?.labels?.categoryProperty?.basics?.email, 
             value: it.resume.basics.email,
             showLabel: false,
