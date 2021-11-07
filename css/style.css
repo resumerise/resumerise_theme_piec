@@ -30,12 +30,32 @@ body {
 	text-align: left;
 }
 
-h1 {
-	font-size: 22px;
+.basics__left__title--black{
+	font-size: 25px;
+}
+
+.heading {
+	font-size: 32px;
+	margin-bottom: 0;
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 20px;
+}
+
+li {
+	list-style: none;
+	color: #83847f;
+}
+
+.basics__left__text--blue {
+	font-size: 20px;
+	color: #538ca4;
+	font-weight: bold;
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
 }
 
 section {
@@ -62,7 +82,7 @@ blockquote {
 .key-value-item label, 
 .key-list-item label {
 	white-space: nowrap;
-	color: gainsboro;
+	color: #538ca4;
 	margin-right: 5px;
 }
 
@@ -91,4 +111,78 @@ blockquote {
 
 .picture img {
 	border-radius: 50%;
+}
+
+.basics {
+	display: flex;
+	width: 100%;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.basics__left {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin-right: auto;
+}
+
+.basics__right {
+	display: flex;
+	width: 50%;
+}
+
+.basics__left--summary {
+	width: 70%;
+
+}
+
+.resume__lower {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.resume__lower__left {
+	width: 40%;
+}
+
+.resume__lower__right {
+	width: 50%;
+	padding-left: 20px;
+}
+
+@media screen and (max-width:889px){
+	.basics__left {
+		width: 100%;
+		
+		text-align: center;
+		margin: 0 auto;
+	}
+	.basics__left__text {
+		display: flex;
+		justify-content: center;
+	}
+	.basics__left--summary {
+		width: 100%;
+		align-items: center;
+	}
+	.basics__right {
+		justify-content: center;
+	}
+	span {
+		width: 100%;
+	}
+	.resume__lower {
+		justify-content: center;
+		text-align: center;
+	}
+	.resume__lower__left {
+		width: 100%;
+	}
+	.resume__lower__right {
+		width: 100%;
+	}
 }

@@ -17,11 +17,25 @@
 	</head>
 	<body>
 		<div class="main container">
+		<div class="resume__upper">
 			<!-- BASICS -->
 			<%~ include("basic", {
 				resume: it.resume,
 				formatDate: it.formatDate
 			}) %>
+		</div>
+		<div class="resume__lower">
+		
+		<div class="resume__lower__left">
+
+<!-- WORK -->
+			<%~ include("work", {
+				resume: it.resume,
+				formatDate: it.formatDate
+			}) %>
+		</div>
+
+		<div class="resume__lower__right">
 
 			<!-- SKILLS -->
 			<%~ include("skills", {
@@ -53,11 +67,7 @@
 				formatDate: it.formatDate
 			}) %>
 			
-			<!-- WORK -->
-			<%~ include("work", {
-				resume: it.resume,
-				formatDate: it.formatDate
-			}) %>
+			
 			
 			<!-- PROJECT -->
 			<%~ include("project", {
@@ -94,6 +104,11 @@
 				resume: it.resume,
 				formatDate: it.formatDate
 			}) %>
+		
+		</div>
+		</div>
+
+			
 		</div>
 	</body>
 </html>
