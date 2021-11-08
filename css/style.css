@@ -1,12 +1,16 @@
 :root {
-	--layout-padding: 40px;
+	--layout-padding: 4em;
+	--blue-color: #538ca4;
+	--gray-color: #83847f;
+	--heading-two-size: 1.4em;
 }
+
 
 /* layout */
 body {
 	padding: var(--layout-padding);
 	background: #fff;
-	font: 15px Arial, Helvetica, sans-serif;
+	font: 5em;
 }
 
 @media print {
@@ -20,8 +24,7 @@ body {
 @media screen {
 	body {
 		line-height: 1.4;
-		margin: 50px 0;
-		margin-bottom: 100px;
+		margin: 2.5em 0;
 	}
 }
 
@@ -30,12 +33,32 @@ body {
 	text-align: left;
 }
 
-h1 {
-	font-size: 22px;
+.basics__left__title--black{
+	font-size: 2rem;
+}
+
+.heading {
+	font-size: 2.3em;
+	margin-bottom: 0;
+	font-weight: 700;
 }
 
 h2 {
-	font-size: 18px;
+	font-size: var(--heading-two-size);
+}
+
+li {
+	list-style: none;
+	color: var(--gray-color);
+}
+
+.second__heading {
+	font-size: var(--heading-two-size);
+	color: var(--blue-color);
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
 }
 
 section {
@@ -56,14 +79,14 @@ blockquote {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: flex-start;
-	margin-bottom: 5px;
+	margin-bottom: 0.5em;
 }
 
 .key-value-item label, 
 .key-list-item label {
 	white-space: nowrap;
-	color: gainsboro;
-	margin-right: 5px;
+	color: var(--blue-color);
+	margin-right: 1em;
 }
 
 .key-value-item span {
@@ -91,4 +114,78 @@ blockquote {
 
 .picture img {
 	border-radius: 50%;
+}
+
+.basics {
+	display: flex;
+	width: 100%;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.basics__left {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin-right: auto;
+}
+
+.basics__right {
+	display: flex;
+	width: 50%;
+}
+
+.basics__left--summary {
+	width: 70%;
+
+}
+
+.resume__lower {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.resume__lower__left {
+	width: 40%;
+}
+
+.resume__lower__right {
+	width: 50%;
+	padding-left: 2em;
+}
+
+@media screen and (max-width:889px){
+	.basics__left {
+		width: 100%;
+		
+		text-align: center;
+		margin: 0 auto;
+	}
+	.basics__left__text {
+		display: flex;
+		justify-content: center;
+	}
+	.basics__left--summary {
+		width: 100%;
+		align-items: center;
+	}
+	.basics__right {
+		justify-content: center;
+	}
+	span {
+		width: 100%;
+	}
+	.resume__lower {
+		justify-content: center;
+		text-align: center;
+	}
+	.resume__lower__left {
+		width: 100%;
+	}
+	.resume__lower__right {
+		width: 100%;
+	}
 }

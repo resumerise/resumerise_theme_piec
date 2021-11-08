@@ -1,6 +1,6 @@
 <section id="education">
 	<% if(it.resume.settings?.labels?.categoryProperty?.education?.categoryTitle) { %>
-		<h1>
+		<h1 class="second__heading">
 			<%= it.resume.settings.labels.categoryProperty.education.categoryTitle %>
 		</h1>
 	<% } %>

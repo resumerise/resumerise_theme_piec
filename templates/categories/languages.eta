@@ -1,6 +1,6 @@
 <section id="languages">
 	<% if(it.resume.settings?.labels?.categoryProperty?.language?.categoryTitle) { %>
-		<h1>
+		<h1 class="second__heading">
 			<%= it.resume.settings.labels.categoryProperty.language.categoryTitle %>
 		</h1>
 	<% } %>
