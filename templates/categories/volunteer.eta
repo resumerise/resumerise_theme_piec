@@ -1,6 +1,6 @@
 <section id="volunteer">
 	<% if(it.resume.settings?.labels?.categoryProperty?.volunteer?.categoryTitle) { %>
-		<h1 class="basics__left__text--blue">
+		<h1 class="second__heading">
 			<%= it.resume.settings.labels.categoryProperty.volunteer.categoryTitle %>
 		</h1>
 	<% } %>

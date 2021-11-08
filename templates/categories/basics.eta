@@ -16,7 +16,7 @@
             value: it.resume.basics.label,
             showLabel: false,
             id: 'basics-name',
-            classes: "basics__left__text--blue",
+            classes: "second__heading",
         }) %>
         <%~ include('key-value-item', {
             label: it.resume.settings?.labels?.categoryProperty?.basics?.website, 
