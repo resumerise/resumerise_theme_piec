@@ -7,8 +7,7 @@
 	<% it.resume?.education.forEach(function(education) { %>
 		<div class="item content">
 			<%~ include('nav', {categoryKey: it.resume?.settings?.categoryKeys?.education, showDelete: true, id: education.id}) %>
-			<%~ include('date-range', {
-				formatDate: it.formatDate, 
+			<%~ include('date-range', { 
 				startDate: education.startDate,
 				endDate: education.endDate,
 				present: education.present,
